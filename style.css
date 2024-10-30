@@ -1,0 +1,77 @@
+#container {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left:600px;
+}
+
+#container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+
+}
+
+#container img:hover {
+    transform: scale(1.05);
+}
+p {
+    text-align: center;
+    font-family: Montserrat;
+}
+ button {
+    background-color: #007bff; /* Ngjyra e butonit */
+    color: white; /* Ngjyra e tekstit */
+    padding: 15px 30px; /* Hapsira brenda butonit */
+    border: none; /* Pa kufij */
+    border-radius: 5px; /* Këndet e zbutura */
+    font-size: 16px; /* Madhësia e tekstit */
+    cursor: pointer; /* Kursor për dore */
+    transition: background-color 0.3s ease; /* Efekti i kalimit */
+}
+
+button:hover {
+    background-color: #0056b3; /* Ngjyra kur kalon me miun */
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+ form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+nav {
+background-color: saddlebrown;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    flex: 1; /* Çdo element të ketë të njëjtën gjerësi */
+}
+
+.menu a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #575757; /* Ngjyrë e ndryshimit kur kalon me miun */
+}
