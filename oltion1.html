@@ -5,6 +5,75 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+        }
+
+        legend {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+
+        .hobby-label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
 	<section class="menu">
@@ -14,12 +83,41 @@
 	<li><a href="contact.html">contact us</a></li>
 	</ul>
 </section>
-<form>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,224L9.2,229.3C18.5,235,37,245,55,224C73.8,203,92,149,111,112C129.2,75,148,53,166,42.7C184.6,32,203,32,222,58.7C240,85,258,139,277,138.7C295.4,139,314,85,332,74.7C350.8,64,369,96,388,133.3C406.2,171,425,213,443,224C461.5,235,480,213,498,218.7C516.9,224,535,256,554,234.7C572.3,213,591,139,609,133.3C627.7,128,646,192,665,186.7C683.1,181,702,107,720,90.7C738.5,75,757,117,775,122.7C793.8,128,812,96,831,80C849.2,64,868,64,886,53.3C904.6,43,923,21,942,58.7C960,96,978,192,997,213.3C1015.4,235,1034,181,1052,181.3C1070.8,181,1089,235,1108,256C1126.2,277,1145,267,1163,229.3C1181.5,192,1200,128,1218,128C1236.9,128,1255,192,1274,202.7C1292.3,213,1311,171,1329,160C1347.7,149,1366,171,1385,149.3C1403.1,128,1422,64,1431,32L1440,0L1440,0L1430.8,0C1421.5,0,1403,0,1385,0C1366.2,0,1348,0,1329,0C1310.8,0,1292,0,1274,0C1255.4,0,1237,0,1218,0C1200,0,1182,0,1163,0C1144.6,0,1126,0,1108,0C1089.2,0,1071,0,1052,0C1033.8,0,1015,0,997,0C978.5,0,960,0,942,0C923.1,0,905,0,886,0C867.7,0,849,0,831,0C812.3,0,794,0,775,0C756.9,0,738,0,720,0C701.5,0,683,0,665,0C646.2,0,628,0,609,0C590.8,0,572,0,554,0C535.4,0,517,0,498,0C480,0,462,0,443,0C424.6,0,406,0,388,0C369.2,0,351,0,332,0C313.8,0,295,0,277,0C258.5,0,240,0,222,0C203.1,0,185,0,166,0C147.7,0,129,0,111,0C92.3,0,74,0,55,0C36.9,0,18,0,9,0L0,0Z"></path></svg>
+<form><fieldset>
 	<h1>LET US TO CONTACT YOU</h1>
+	<legend>Personel infomatcion</legend>
 	<label for="firstname">First name:</label><br>
 	<input type="text" id="firstname" name="firstname"><br>
 	<label for="lastname">Last name:</label>
 	<input type="text" id name="lastname" name="lastname"><br>
+    <label for="lastname">Email:</label>
+    input type="text" id name="lastname" name="lastname"><br>
+    
+    <label for="lastname">Password:</label>
+	<input type="password" id name="password" name="password" size="40" placeholder="password"><br><br>
+ <label>Gender:</label><br>
+ <input type="radio" id="male" name="gender" value="male">
+ <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label><br>
+ <label>Hobies:</label><br>
+ <input type="checkbox" id="gaming" name="gaming" value="Gaming">
+ <label for="gaming">Gaming</label><br>
+  <input type="checkbox" id="fotball" name="fotball" value="Fotball">
+ <label for="fotball">Fotball</label><br>
+  <input type="checkbox" id="swiming" name="swiming" value="Swiming">
+ <label for="swiming">Swiming</label><br>
+ <label for="pets">Chose a pet</label>
+ <select id="pet" name="pet">
+ 	 <option value="Dog">Dog</option>
+     <option value="Cat">Cat</option>
+     <option value="Lion">Lion</option>
+ </select><br><br>
+ <textarea name="message" rows="10" cols="20" maxlength="20"></textarea>
+
+ <input type="submit" id="sumbit"name="sumbit"><br>
+</fieldset>
 </form>
 <br>
 	<section id="container">
@@ -70,7 +168,9 @@
 <iframe src="https://shkolladigjitale.com/" height="600" width="1200" title="Iframe example"></iframe>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5896.400996813377!2d21.099843947720693!3d42.35956616265827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13547f662d473a87%3A0xd3d06ee952c6ab7f!2sManastirc!5e0!3m2!1sen!2s!4v1730133712416!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <button><a href="https://www.google.com/search?sca_esv=0ced97706a2430ad&q=BMW&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3JzWreY9LW7LdGrLDAFqYDH32tgteNhtZOxnGezgnEGc8nJf0T5kIXfpR5VSirtGGTDvS5oWtbiAFedZFmW9WGDZAHp3wm0L6-7Wlad262RqxuN_gPAphyu7_mNDyDeZeq9VkNeQ&sa=X&ved=2ahUKEwiUgLT-56SJAxURBtsEHW_tAO4QtKgLegQIEhAB&biw=1920&bih=901&dpr=1" target="_blank">TE GJITHA IMAZHET JANE MARR KETU NE GOOGEL</a></button>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,224L9.2,229.3C18.5,235,37,245,55,224C73.8,203,92,149,111,112C129.2,75,148,53,166,42.7C184.6,32,203,32,222,58.7C240,85,258,139,277,138.7C295.4,139,314,85,332,74.7C350.8,64,369,96,388,133.3C406.2,171,425,213,443,224C461.5,235,480,213,498,218.7C516.9,224,535,256,554,234.7C572.3,213,591,139,609,133.3C627.7,128,646,192,665,186.7C683.1,181,702,107,720,90.7C738.5,75,757,117,775,122.7C793.8,128,812,96,831,80C849.2,64,868,64,886,53.3C904.6,43,923,21,942,58.7C960,96,978,192,997,213.3C1015.4,235,1034,181,1052,181.3C1070.8,181,1089,235,1108,256C1126.2,277,1145,267,1163,229.3C1181.5,192,1200,128,1218,128C1236.9,128,1255,192,1274,202.7C1292.3,213,1311,171,1329,160C1347.7,149,1366,171,1385,149.3C1403.1,128,1422,64,1431,32L1440,0L1440,320L1430.8,320C1421.5,320,1403,320,1385,320C1366.2,320,1348,320,1329,320C1310.8,320,1292,320,1274,320C1255.4,320,1237,320,1218,320C1200,320,1182,320,1163,320C1144.6,320,1126,320,1108,320C1089.2,320,1071,320,1052,320C1033.8,320,1015,320,997,320C978.5,320,960,320,942,320C923.1,320,905,320,886,320C867.7,320,849,320,831,320C812.3,320,794,320,775,320C756.9,320,738,320,720,320C701.5,320,683,320,665,320C646.2,320,628,320,609,320C590.8,320,572,320,554,320C535.4,320,517,320,498,320C480,320,462,320,443,320C424.6,320,406,320,388,320C369.2,320,351,320,332,320C313.8,320,295,320,277,320C258.5,320,240,320,222,320C203.1,320,185,320,166,320C147.7,320,129,320,111,320C92.3,320,74,320,55,320C36.9,320,18,320,9,320L0,320Z"></path></svg>
 
 
 </body>
+
 </html>     
